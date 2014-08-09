@@ -41,7 +41,7 @@ html {
 }
 
 .page > article {
-  scroll: auto;
+  overflow: scroll;
   display: block;
   position: absolute;
   margin: 0;
@@ -49,7 +49,7 @@ html {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .page > header + article {
@@ -198,7 +198,7 @@ article > textarea {
   display: block;
   position: fixed;
   bottom: 0;
-  left 0;
+  left: 0;
   width: 100%;
   font-size: 2.5rem;
 }
@@ -227,4 +227,39 @@ footer > a:active {
 
 #stderr {
   color: #f00;
+}
+
+/* transtions */
+#main {
+  z-index: 11;
+  transition: transform 0.2s ease;
+  transform: translateX(0%);
+  display: block;
+}
+
+#main:not(.active) {
+  transform: translateX(-100%);
+}
+
+#editor {
+  z-index: 12;
+  transition: transform 0.2s ease;
+  transform: translateX(100%);
+  display: block;
+}
+
+#editor.active {
+  transform: translate(0%);
+}
+
+#result {
+  z-index: -100;
+  transition: opacity 0.4s ease;
+  opacity: 0.0;
+  display: block;
+}
+
+#result.active {
+  z-index: 100;
+  opacity: 1.0;
 }
