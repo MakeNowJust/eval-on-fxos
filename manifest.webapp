@@ -1,0 +1,18 @@
+{
+  "name": "Eval on Firefox OS",
+  "description": "Evaluate your program on Firefox OS",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "TSUYUSATO Kitsune",
+    "url": "https://github.com/MakeNowJust"
+  },
+  "default_lang": "en",
+  "premissions": {
+    "device-storage:sdcard": {
+      "access": "readwrite"
+    }
+  }
+}

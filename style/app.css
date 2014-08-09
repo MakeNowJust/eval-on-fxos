@@ -1,0 +1,230 @@
+/* use screen fully */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 65%;
+}
+
+* {
+  overflow: hidden;
+}
+
+/* page layout */
+
+.page {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page > header {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 1rem 0;
+  left: 0;
+  top: 0;
+  height: 2rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.page > article {
+  scroll: auto;
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page > header + article {
+  top: 4rem;
+}
+
+.page > footer {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 10;
+}
+
+/* activation */
+
+.page:not(.active) {
+  display: none;
+}
+
+
+/* headers */
+
+header h1 {
+  display: block;
+  margin: auto;
+  height: 2rem;
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header .left-btn {
+  display: block;
+  position: absolute;
+  padding: 1rem 0;
+  height: 2rem;
+  width: 10%;
+  text-align: center;
+  font-size: 2rem;
+  top: 0;
+  left: 0;
+  border-right: 0px #000 solid;
+}
+
+/* content */
+
+article > ul {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+article > ul li {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0 0 2em;
+  width: 90%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-bottom: 1px #000 solid;
+  /* text-align: center; */
+}
+
+/* footer */
+
+footer > a {
+  display: block;
+  padding: 1rem 0;
+  height: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer.one-button > a {
+  width: 100%;
+}
+
+footer.double-button > a {
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+footer.double-button > a:first-child {
+  left: 0;
+}
+
+footer.double-button > a:last-child {
+  left: 50%;
+}
+
+/* inputs */
+
+#editor article {
+  height: 80%;
+}
+
+article > input {
+  display: block;
+  width: 100%;
+}
+
+article > textarea {
+  overflow: scroll;
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+/* dialog */
+
+.dialog {
+  overflow: scroll;
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog:not(.active) {
+  display: none;
+}
+
+.dialog pre {
+  display: block;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dialog button {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left 0;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+/* colors */
+
+header {
+  background: #c8bd59;
+}
+
+header .left-btn:active {
+  background: #c5ac52;
+}
+
+article > ul li:active {
+  background: #e5f4f6;
+}
+
+footer > a {
+  background: #a4e0e1;
+}
+
+footer > a:active {
+  background: #5cc9c7;
+}
+
+#stderr {
+  color: #f00;
+}

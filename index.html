@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eval on Firefox OS</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+  </head>
+
+  <body>
+    <section id="main" class="page active">
+      <header>
+        <h1>Eval on Firefox OS</h1>
+      </header>
+      <article>
+        <ul id="files">
+        </ul>
+      </article>
+      <footer class="one-button">
+        <a id="new-file">
+          +
+        </a>
+      </footer>
+    </section>
+
+    <section id="editor" class="page">
+      <header>
+        <a id="editor-back" class="left-btn"><i class="fa fa-chevron-left"></i></a>
+        <h1 id="bind-file-name"></h1>
+      </header>
+      <article>
+        <input type="text" id="file-name" value="" placeholder="File Name">
+        <textarea id="content" placeholder="Source Code Here"></textarea>
+      </article>
+      <footer class="double-button">
+        <a id="save-file">
+          <i class="fa fa-floppy-o"></i>
+        </a>
+        <a id="eval-file">
+          <i class="fa fa-play"></i>
+        </a>
+      </footer>
+    </section>
+
+    <section id="result" class="dialog">
+      <pre><code id="stdout">
+      </code></pre>
+      <pre><code id="stderr">
+      </code></pre>
+      <button id="result-back">OK</button>
+    </section>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
