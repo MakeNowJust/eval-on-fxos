@@ -2,7 +2,7 @@
   "name": "Eval on Firefox OS",
   "package_path": "http://makenowjust.github.io/eval-on-fxos/package/package.zip",
   "size": 428459,
-  "version": "1.0"
+  "version": "1.0",
   "developer": {
     "name": "TSUYUSATO Kitsune",
     "url": "http://github.com/MakeNowJust"
