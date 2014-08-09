@@ -1,7 +1,7 @@
 {
   "name": "Eval on Firefox OS",
   "description": "Evaluate your program on Firefox OS",
-  "launch_path": "/index.html",
+  "launch_path": "/app.html",
   "icons": {
     "128": "/img/icon-128.png"
   },
